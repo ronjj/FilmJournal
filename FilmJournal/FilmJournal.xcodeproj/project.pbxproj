@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		543992F6271A181D0013E179 /* FilmRollDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543992F5271A181D0013E179 /* FilmRollDetailView.swift */; };
+		543992F8271A19E00013E179 /* AddRollSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543992F7271A19E00013E179 /* AddRollSheet.swift */; };
+		543992FA271A202A0013E179 /* FilmRollsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543992F9271A202A0013E179 /* FilmRollsViewModel.swift */; };
+		548E8D8C271FA981007B2293 /* FilmRollsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 548E8D8A271FA981007B2293 /* FilmRollsContainer.xcdatamodeld */; };
+		54DD868E2719AF80007C09DA /* FilmJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD868D2719AF80007C09DA /* FilmJournalApp.swift */; };
+		54DD86902719AF80007C09DA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD868F2719AF80007C09DA /* HomeView.swift */; };
+		54DD86922719AF82007C09DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DD86912719AF82007C09DA /* Assets.xcassets */; };
+		54DD86952719AF82007C09DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54DD86942719AF82007C09DA /* Preview Assets.xcassets */; };
+		54DD869C2719F214007C09DA /* FilmRoll Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD869B2719F214007C09DA /* FilmRoll Model.swift */; };
+		54DD869E2719F243007C09DA /* FilmRollCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD869D2719F243007C09DA /* FilmRollCardView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		543992F5271A181D0013E179 /* FilmRollDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDetailView.swift; sourceTree = "<group>"; };
+		543992F7271A19E00013E179 /* AddRollSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRollSheet.swift; sourceTree = "<group>"; };
+		543992F9271A202A0013E179 /* FilmRollsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollsViewModel.swift; sourceTree = "<group>"; };
+		548E8D8B271FA981007B2293 /* FilmRollsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FilmRollsContainer.xcdatamodel; sourceTree = "<group>"; };
+		54DD868A2719AF80007C09DA /* FilmJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54DD868D2719AF80007C09DA /* FilmJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmJournalApp.swift; sourceTree = "<group>"; };
+		54DD868F2719AF80007C09DA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		54DD86912719AF82007C09DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54DD86942719AF82007C09DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54DD869B2719F214007C09DA /* FilmRoll Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmRoll Model.swift"; sourceTree = "<group>"; };
+		54DD869D2719F243007C09DA /* FilmRollCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollCardView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54DD86872719AF80007C09DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54DD86812719AF80007C09DA = {
+			isa = PBXGroup;
+			children = (
+				54DD868C2719AF80007C09DA /* FilmJournal */,
+				54DD868B2719AF80007C09DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54DD868B2719AF80007C09DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54DD868A2719AF80007C09DA /* FilmJournal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54DD868C2719AF80007C09DA /* FilmJournal */ = {
+			isa = PBXGroup;
+			children = (
+				54DD868D2719AF80007C09DA /* FilmJournalApp.swift */,
+				54DD868F2719AF80007C09DA /* HomeView.swift */,
+				543992F9271A202A0013E179 /* FilmRollsViewModel.swift */,
+				543992F5271A181D0013E179 /* FilmRollDetailView.swift */,
+				543992F7271A19E00013E179 /* AddRollSheet.swift */,
+				54DD869D2719F243007C09DA /* FilmRollCardView.swift */,
+				54DD869B2719F214007C09DA /* FilmRoll Model.swift */,
+				54DD86912719AF82007C09DA /* Assets.xcassets */,
+				548E8D8A271FA981007B2293 /* FilmRollsContainer.xcdatamodeld */,
+				54DD86932719AF82007C09DA /* Preview Content */,
+			);
+			path = FilmJournal;
+			sourceTree = "<group>";
+		};
+		54DD86932719AF82007C09DA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				54DD86942719AF82007C09DA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54DD86892719AF80007C09DA /* FilmJournal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54DD86982719AF82007C09DA /* Build configuration list for PBXNativeTarget "FilmJournal" */;
+			buildPhases = (
+				54DD86862719AF80007C09DA /* Sources */,
+				54DD86872719AF80007C09DA /* Frameworks */,
+				54DD86882719AF80007C09DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilmJournal;
+			productName = FilmJournal;
+			productReference = 54DD868A2719AF80007C09DA /* FilmJournal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54DD86822719AF80007C09DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					54DD86892719AF80007C09DA = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 54DD86852719AF80007C09DA /* Build configuration list for PBXProject "FilmJournal" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54DD86812719AF80007C09DA;
+			productRefGroup = 54DD868B2719AF80007C09DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54DD86892719AF80007C09DA /* FilmJournal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54DD86882719AF80007C09DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DD86952719AF82007C09DA /* Preview Assets.xcassets in Resources */,
+				54DD86922719AF82007C09DA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54DD86862719AF80007C09DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54DD869C2719F214007C09DA /* FilmRoll Model.swift in Sources */,
+				54DD86902719AF80007C09DA /* HomeView.swift in Sources */,
+				54DD868E2719AF80007C09DA /* FilmJournalApp.swift in Sources */,
+				543992F6271A181D0013E179 /* FilmRollDetailView.swift in Sources */,
+				543992F8271A19E00013E179 /* AddRollSheet.swift in Sources */,
+				543992FA271A202A0013E179 /* FilmRollsViewModel.swift in Sources */,
+				548E8D8C271FA981007B2293 /* FilmRollsContainer.xcdatamodeld in Sources */,
+				54DD869E2719F243007C09DA /* FilmRollCardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		54DD86962719AF82007C09DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		54DD86972719AF82007C09DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		54DD86992719AF82007C09DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FilmJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = Y72HF9FX59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jab.ron.FilmJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		54DD869A2719AF82007C09DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FilmJournal/Preview Content\"";
+				DEVELOPMENT_TEAM = Y72HF9FX59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jab.ron.FilmJournal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54DD86852719AF80007C09DA /* Build configuration list for PBXProject "FilmJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DD86962719AF82007C09DA /* Debug */,
+				54DD86972719AF82007C09DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54DD86982719AF82007C09DA /* Build configuration list for PBXNativeTarget "FilmJournal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54DD86992719AF82007C09DA /* Debug */,
+				54DD869A2719AF82007C09DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		548E8D8A271FA981007B2293 /* FilmRollsContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				548E8D8B271FA981007B2293 /* FilmRollsContainer.xcdatamodel */,
+			);
+			currentVersion = 548E8D8B271FA981007B2293 /* FilmRollsContainer.xcdatamodel */;
+			path = FilmRollsContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 54DD86822719AF80007C09DA /* Project object */;
+}
