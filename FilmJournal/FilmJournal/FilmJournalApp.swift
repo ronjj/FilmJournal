@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FilmJournalApp: App {
+   
+    let roll = FilmRollEntity()
     var body: some Scene {
+        
         WindowGroup {
-            HomeView()
+            HomeView(roll: roll)
         }
     }
 }

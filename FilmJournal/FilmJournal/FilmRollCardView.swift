@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct FilmRollCardView: View {
-    var roll: FilmRoll
+
+    @StateObject var vm = coreDataViewModel()
+    var roll: FilmRollEntity
     
     var body: some View {
+        let rollDate = roll.dateString
+        let rollTime = roll.timeString
+        let dateFormatter = DateFormatter()
         
         NavigationLink(destination: FilmRollDetailView(roll: roll)) {
             HStack{
                 VStack (alignment: .leading, spacing: 15){
-                    Text(roll.stock)
-                    Text(roll.notes)
-                    Text( "Date Shot: \(roll.dateString)")
-                    Text("Time Used: \(roll.timeString)")
+                    Text(roll.stock ?? "")
+                    Text(roll.notes ?? "")
+                    Text("Date Shot:\(dateFormatter.string(from: rollDate!))")
+                    Text("Time Shot:\(dateFormatter.string(from: rollTime!))")
                 }
                 .padding(10)
                 

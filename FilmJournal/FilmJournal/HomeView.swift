@@ -11,16 +11,44 @@ import SwiftUI
 
 struct HomeView: View {
 
-    @ObservedObject var filmRolls = FilmRolls()
+   // @ObservedObject var filmRolls = FilmRolls()
     @State private var showingSheet = false
+    @StateObject var vm = coreDataViewModel()
+    var roll: FilmRollEntity
+    
+    
+    
     var body: some View {
+        let rollDate = roll.dateString
+        let rollTime = roll.timeString
+        let dateFormatter = DateFormatter()
         NavigationView{
           
             List{
-                ForEach(filmRolls.filmRolls) { roll in
-                    FilmRollCardView(roll: roll)
+                ForEach(vm.savedEntities) { entity in
+                    //FilmRollCardView(roll: roll)
+                    NavigationLink(destination: FilmRollDetailView(roll: entity)) {
+                        HStack{
+                            VStack (alignment: .leading, spacing: 15){
+                                Text(roll.stock ?? "")
+                                Text(roll.notes ?? "")
+                                Text("Date Shot:\(dateFormatter.string(from: rollDate!))")
+                                Text("Time Shot:\(dateFormatter.string(from: rollTime!))")
+                            }
+                            .padding(10)
+                            
+                            Spacer()
+                            
+                            HStack{
+                                Image(systemName: "chevron.right")
+                                    .foregroundColor(Color.black)
+                                    .font(.caption)
+                                    .padding(.horizontal, 8)
+                            }
+                        }
+                    }
                 }
-                .onDelete(perform: removeItems)
+                .onDelete(perform: vm.deleteRoll)
             }
             
                 
@@ -44,13 +72,8 @@ struct HomeView: View {
             .navigationTitle("Film Journal")
         }
         .sheet(isPresented: $showingSheet) {
-            AddRollSheet(filmRolls: filmRolls)
+            AddRollSheet()
                }
-    }
-    
-    func removeItems(at offsets: IndexSet) {
-        filmRolls.filmRolls.remove(atOffsets: offsets)
-    }
-   
+    }   
 }
 

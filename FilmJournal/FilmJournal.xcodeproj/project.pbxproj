@@ -64,8 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				54DD868D2719AF80007C09DA /* FilmJournalApp.swift */,
-				54DD868F2719AF80007C09DA /* HomeView.swift */,
 				543992F9271A202A0013E179 /* FilmRollsViewModel.swift */,
+				54DD868F2719AF80007C09DA /* HomeView.swift */,
 				543992F5271A181D0013E179 /* FilmRollDetailView.swift */,
 				543992F7271A19E00013E179 /* AddRollSheet.swift */,
 				54DD869D2719F243007C09DA /* FilmRollCardView.swift */,

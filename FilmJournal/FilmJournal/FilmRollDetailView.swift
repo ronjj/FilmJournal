@@ -9,22 +9,29 @@ import SwiftUI
 
 struct FilmRollDetailView: View {
     
-    var roll: FilmRoll
-    
+    var roll: FilmRollEntity
+
     var body: some View {
+        let rollDate = roll.dateString
+        let rollTime = roll.timeString
+        let dateFormatter = DateFormatter()
         
         List{
-            Text("Film Stock: \(roll.stock)")
-            Text("Date Shot: \(roll.dateString)")
-            Text("Time Shot: \(roll.timeString)")
-            Text("Extra Notes: \(roll.notes)")
-            Text("Film ISO: \(roll.iso)")
-            Text("Location Used: \(roll.location)")
-            Text("Camera Used: \(roll.cameraUsed)")
+            //Text("Date Shot: \(roll.dateString ?? "")")
+            // Text("Location Used: \(roll.location)")
+            //Text("Time Shot: \(roll.timeString ?? "")")
+         
+            Text("Film Stock: \(roll.stock ?? "")")
+            Text("Date Shot:\(dateFormatter.string(from: rollDate!))")
+            Text("Time Shot:\(dateFormatter.string(from: rollTime!))")
+            Text("Extra Notes: \(roll.notes ?? "")")
+            Text("Film ISO: \(roll.iso ?? "")")
+           
+            Text("Camera Used: \(roll.cameraUsed ?? "")")
             
 
         }
-        .navigationTitle(roll.stock)
+        .navigationTitle(roll.stock ?? "")
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button {
