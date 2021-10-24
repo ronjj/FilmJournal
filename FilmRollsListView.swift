@@ -25,7 +25,7 @@ struct FilmRollsListView: View {
   
   private func filmRowView(filmRoll: FilmRoll) -> some View {
     NavigationLink(destination: FilmRollDetailsView(filmRoll: filmRoll)) {
-      VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 5) {
         Text(filmRoll.stock)
           .font(.headline)
         Text(filmRoll.cameraUsed)
@@ -33,6 +33,7 @@ struct FilmRollsListView: View {
         Text("\(filmRoll.startDateString) -> \(filmRoll.endDateString)")
             .font(.subheadline)
       }
+      .padding(10)
     }
   }
   

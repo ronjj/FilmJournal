@@ -21,6 +21,7 @@ struct FilmRollDetailsView: View {
     
     var body: some View {
         Form {
+            
             Section(header: Text("Roll Details")) {
                 Text("Film Stock: \(filmRoll.stock) ")
                 Text("Camera Used: \(filmRoll.cameraUsed) ")
@@ -28,12 +29,12 @@ struct FilmRollDetailsView: View {
                 Text("# of Exposures: \(filmRoll.numberOfPictures) ")
                 Text("Extra Notes: \(filmRoll.extraNotes) ")
             }
-            
+
             Section(header: Text("Extra Info")) {
                 Text("Locaiton(s): \(filmRoll.location) ")
                 Text("Dates Shot: \(filmRoll.startDateString) -> \(filmRoll.endDateString) ")
-                
-                
+
+
             }
         }
         .navigationBarTitle(filmRoll.stock)
