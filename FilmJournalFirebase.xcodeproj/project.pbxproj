@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		29727F621B89C30850181071 /* Pods_FilmJournalFirebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A79DC2CD9D6A405D99D1B3C4 /* Pods_FilmJournalFirebase.framework */; };
+		544D3DAB272484E90015C726 /* FilmJournalFirebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DAA272484E90015C726 /* FilmJournalFirebaseApp.swift */; };
+		544D3DAD272484E90015C726 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DAC272484E90015C726 /* ContentView.swift */; };
+		544D3DAF272484EB0015C726 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544D3DAE272484EB0015C726 /* Assets.xcassets */; };
+		544D3DB2272484EB0015C726 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544D3DB1272484EB0015C726 /* Preview Assets.xcassets */; };
+		544D3DB9272485160015C726 /* FilmRoll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DB8272485160015C726 /* FilmRoll.swift */; };
+		544D3DBB2724854F0015C726 /* FilmRollsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DBA2724854F0015C726 /* FilmRollsViewModel.swift */; };
+		544D3DBD272485DE0015C726 /* FilmRollViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DBC272485DE0015C726 /* FilmRollViewModel.swift */; };
+		544D3DBF272486C10015C726 /* FilmRollsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DBE272486C10015C726 /* FilmRollsListView.swift */; };
+		544D3DC12724874C0015C726 /* FilmRollEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DC02724874C0015C726 /* FilmRollEditView.swift */; };
+		544D3DC3272487A00015C726 /* FilmRollDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DC2272487A00015C726 /* FilmRollDetailView.swift */; };
+		544D3DC5272488960015C726 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 544D3DC4272488960015C726 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		544D3DA7272484E90015C726 /* FilmJournalFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmJournalFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		544D3DAA272484E90015C726 /* FilmJournalFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmJournalFirebaseApp.swift; sourceTree = "<group>"; };
+		544D3DAC272484E90015C726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		544D3DAE272484EB0015C726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		544D3DB1272484EB0015C726 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		544D3DB8272485160015C726 /* FilmRoll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRoll.swift; sourceTree = "<group>"; };
+		544D3DBA2724854F0015C726 /* FilmRollsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollsViewModel.swift; sourceTree = "<group>"; };
+		544D3DBC272485DE0015C726 /* FilmRollViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollViewModel.swift; sourceTree = "<group>"; };
+		544D3DBE272486C10015C726 /* FilmRollsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollsListView.swift; sourceTree = "<group>"; };
+		544D3DC02724874C0015C726 /* FilmRollEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollEditView.swift; sourceTree = "<group>"; };
+		544D3DC2272487A00015C726 /* FilmRollDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDetailView.swift; sourceTree = "<group>"; };
+		544D3DC4272488960015C726 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84112B466B619A0DF6A2982B /* Pods-FilmJournalFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmJournalFirebase.release.xcconfig"; path = "Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase.release.xcconfig"; sourceTree = "<group>"; };
+		A79DC2CD9D6A405D99D1B3C4 /* Pods_FilmJournalFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmJournalFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90D6B878A407990DB485704 /* Pods-FilmJournalFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmJournalFirebase.debug.xcconfig"; path = "Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		544D3DA4272484E90015C726 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29727F621B89C30850181071 /* Pods_FilmJournalFirebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2110BBF1D16F5A7AB4D7C264 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E90D6B878A407990DB485704 /* Pods-FilmJournalFirebase.debug.xcconfig */,
+				84112B466B619A0DF6A2982B /* Pods-FilmJournalFirebase.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		544D3D9E272484E90015C726 = {
+			isa = PBXGroup;
+			children = (
+				544D3DC4272488960015C726 /* GoogleService-Info.plist */,
+				544D3DB8272485160015C726 /* FilmRoll.swift */,
+				544D3DBA2724854F0015C726 /* FilmRollsViewModel.swift */,
+				544D3DBC272485DE0015C726 /* FilmRollViewModel.swift */,
+				544D3DBE272486C10015C726 /* FilmRollsListView.swift */,
+				544D3DC02724874C0015C726 /* FilmRollEditView.swift */,
+				544D3DC2272487A00015C726 /* FilmRollDetailView.swift */,
+				544D3DA9272484E90015C726 /* FilmJournalFirebase */,
+				544D3DA8272484E90015C726 /* Products */,
+				2110BBF1D16F5A7AB4D7C264 /* Pods */,
+				D3749C66AF2CEE0A80DF9C11 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		544D3DA8272484E90015C726 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				544D3DA7272484E90015C726 /* FilmJournalFirebase.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		544D3DA9272484E90015C726 /* FilmJournalFirebase */ = {
+			isa = PBXGroup;
+			children = (
+				544D3DAA272484E90015C726 /* FilmJournalFirebaseApp.swift */,
+				544D3DAC272484E90015C726 /* ContentView.swift */,
+				544D3DAE272484EB0015C726 /* Assets.xcassets */,
+				544D3DB0272484EB0015C726 /* Preview Content */,
+			);
+			path = FilmJournalFirebase;
+			sourceTree = "<group>";
+		};
+		544D3DB0272484EB0015C726 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				544D3DB1272484EB0015C726 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3749C66AF2CEE0A80DF9C11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A79DC2CD9D6A405D99D1B3C4 /* Pods_FilmJournalFirebase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		544D3DA6272484E90015C726 /* FilmJournalFirebase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544D3DB5272484EB0015C726 /* Build configuration list for PBXNativeTarget "FilmJournalFirebase" */;
+			buildPhases = (
+				B83024554C1DD6F4504D0648 /* [CP] Check Pods Manifest.lock */,
+				544D3DA3272484E90015C726 /* Sources */,
+				544D3DA4272484E90015C726 /* Frameworks */,
+				544D3DA5272484E90015C726 /* Resources */,
+				B631B74D41491BF85DD2C89D /* [CP] Embed Pods Frameworks */,
+				F6DC6CC798453DC9CE5FB364 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FilmJournalFirebase;
+			productName = FilmJournalFirebase;
+			productReference = 544D3DA7272484E90015C726 /* FilmJournalFirebase.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		544D3D9F272484E90015C726 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					544D3DA6272484E90015C726 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 544D3DA2272484E90015C726 /* Build configuration list for PBXProject "FilmJournalFirebase" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 544D3D9E272484E90015C726;
+			productRefGroup = 544D3DA8272484E90015C726 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				544D3DA6272484E90015C726 /* FilmJournalFirebase */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		544D3DA5272484E90015C726 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544D3DB2272484EB0015C726 /* Preview Assets.xcassets in Resources */,
+				544D3DAF272484EB0015C726 /* Assets.xcassets in Resources */,
+				544D3DC5272488960015C726 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B631B74D41491BF85DD2C89D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B83024554C1DD6F4504D0648 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FilmJournalFirebase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6DC6CC798453DC9CE5FB364 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		544D3DA3272484E90015C726 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544D3DAD272484E90015C726 /* ContentView.swift in Sources */,
+				544D3DBD272485DE0015C726 /* FilmRollViewModel.swift in Sources */,
+				544D3DC3272487A00015C726 /* FilmRollDetailView.swift in Sources */,
+				544D3DAB272484E90015C726 /* FilmJournalFirebaseApp.swift in Sources */,
+				544D3DBF272486C10015C726 /* FilmRollsListView.swift in Sources */,
+				544D3DC12724874C0015C726 /* FilmRollEditView.swift in Sources */,
+				544D3DB9272485160015C726 /* FilmRoll.swift in Sources */,
+				544D3DBB2724854F0015C726 /* FilmRollsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		544D3DB3272484EB0015C726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		544D3DB4272484EB0015C726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		544D3DB6272484EB0015C726 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E90D6B878A407990DB485704 /* Pods-FilmJournalFirebase.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FilmJournalFirebase/Preview Content\"";
+				DEVELOPMENT_TEAM = Y72HF9FX59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jab.ron.FilmJournalFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		544D3DB7272484EB0015C726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84112B466B619A0DF6A2982B /* Pods-FilmJournalFirebase.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FilmJournalFirebase/Preview Content\"";
+				DEVELOPMENT_TEAM = Y72HF9FX59;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jab.ron.FilmJournalFirebase;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		544D3DA2272484E90015C726 /* Build configuration list for PBXProject "FilmJournalFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544D3DB3272484EB0015C726 /* Debug */,
+				544D3DB4272484EB0015C726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544D3DB5272484EB0015C726 /* Build configuration list for PBXNativeTarget "FilmJournalFirebase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544D3DB6272484EB0015C726 /* Debug */,
+				544D3DB7272484EB0015C726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 544D3D9F272484E90015C726 /* Project object */;
+}
