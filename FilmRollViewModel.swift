@@ -22,7 +22,7 @@ class FilmRollViewModel: ObservableObject {
   
   // MARK: - Constructors
   
-    init(filmRoll: FilmRoll = FilmRoll(stock: "", iso: 200, cameraUsed: "", numberOfPictures: 36, extraNotes: "", location: "")) {
+    init(filmRoll: FilmRoll = FilmRoll(stock: "", iso: 200, cameraUsed: "", numberOfPictures: 36, extraNotes: "", location: "",  startDateEvent: Date(), endDateEvent: Date())) {
     self.filmRoll = filmRoll
     
     self.$filmRoll

@@ -16,6 +16,24 @@ struct FilmRoll: Identifiable, Codable {
     var numberOfPictures: Int
     var extraNotes: String
     var location: String
+    var startDateEvent: Date
+       var startDateString: String {
+           let formatter = DateFormatter()
+           formatter.dateFormat = "E, d MMM yyyy"
+           return formatter.string(from: startDateEvent)
+       }
+    var endDateEvent: Date
+        var endDateString: String {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "E, d MMM yyyy"
+            return formatter.string(from: endDateEvent)
+        }
+//        var timeString: String {
+//            let formatter = DateFormatter()
+//            formatter.dateFormat = "h:mm a"
+//            formatter.timeZone = NSTimeZone(name: "EDT") as TimeZone?
+//            return formatter.string(from: dateEvent)
+//        }
     
     
     enum CodingKeys: String, CodingKey {
@@ -26,6 +44,8 @@ struct FilmRoll: Identifiable, Codable {
         case numberOfPictures
         case extraNotes
         case location
+        case startDateEvent
+        case endDateEvent
         
     }
 }

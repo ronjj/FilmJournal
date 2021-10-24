@@ -30,6 +30,8 @@ struct FilmRollsListView: View {
           .font(.headline)
         Text(filmRoll.cameraUsed)
           .font(.subheadline)
+        Text("\(filmRoll.startDateString) -> \(filmRoll.endDateString)")
+            .font(.subheadline)
       }
     }
   }
