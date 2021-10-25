@@ -32,6 +32,7 @@ struct FilmRollDetailsView: View {
 
             Section(header: Text("Extra Info")) {
                 Text("Locaiton(s): \(filmRoll.location) ")
+                Text("Lens Info: \(filmRoll.lensInfo) ")
                 Text("Dates Shot: \(filmRoll.startDateString) -> \(filmRoll.endDateString) ")
 
 

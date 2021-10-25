@@ -53,6 +53,7 @@ struct FilmRollEditView: View {
           
           Section(header: Text("Extra Info")) {
             TextField("Location(s) Shot", text: $viewModel.filmRoll.location)
+              TextField("Lens Information", text: $viewModel.filmRoll.lensInfo)
               DatePicker("Start Date", selection: $viewModel.filmRoll.startDateEvent, displayedComponents: .date)
               DatePicker("End Date", selection: $viewModel.filmRoll.endDateEvent, displayedComponents: .date)
               
