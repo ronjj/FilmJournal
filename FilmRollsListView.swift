@@ -52,6 +52,9 @@ struct FilmRollsListView: View {
       .toolbar{
           ToolbarItem(placement: ToolbarItemPlacement.bottomBar) {
             addButton
+          }
+          ToolbarItem(placement: ToolbarItemPlacement.primaryAction) {
+            EditButton()
                   
           }
           
