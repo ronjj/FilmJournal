@@ -6,6 +6,7 @@
 ////
 //
 import SwiftUI
+import CoreData
 
 
 
@@ -14,13 +15,13 @@ struct HomeView: View {
    // @ObservedObject var filmRolls = FilmRolls()
     @State private var showingSheet = false
     @StateObject var vm = coreDataViewModel()
-    var roll: FilmRollEntity
+    
     
     
     
     var body: some View {
-        let rollDate = roll.dateString
-        let rollTime = roll.timeString
+        let rollDate = filmRoll.dateString
+        let rollTime = FilmRollModel.timeString
         let dateFormatter = DateFormatter()
         NavigationView{
           

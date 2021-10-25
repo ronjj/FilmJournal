@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
-import CoreData
 
 //class FilmRolls: ObservableObject{
 //    @Published var filmRolls = [FilmRoll]()
 //
 //
 //}
+
+
 
 class coreDataViewModel: ObservableObject{
     

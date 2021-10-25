@@ -14,7 +14,7 @@ struct FilmJournalApp: App {
     var body: some Scene {
         
         WindowGroup {
-            HomeView(roll: roll)
+            HomeView()
         }
     }
 }

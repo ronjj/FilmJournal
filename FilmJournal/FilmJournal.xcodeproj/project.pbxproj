@@ -10,6 +10,8 @@
 		543992F6271A181D0013E179 /* FilmRollDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543992F5271A181D0013E179 /* FilmRollDetailView.swift */; };
 		543992F8271A19E00013E179 /* AddRollSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543992F7271A19E00013E179 /* AddRollSheet.swift */; };
 		543992FA271A202A0013E179 /* FilmRollsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543992F9271A202A0013E179 /* FilmRollsViewModel.swift */; };
+		544D3D9C27247B0B0015C726 /* FilmRollEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3D9A27247B0B0015C726 /* FilmRollEntity+CoreDataClass.swift */; };
+		544D3D9D27247B0B0015C726 /* FilmRollEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3D9B27247B0B0015C726 /* FilmRollEntity+CoreDataProperties.swift */; };
 		548E8D8C271FA981007B2293 /* FilmRollsContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 548E8D8A271FA981007B2293 /* FilmRollsContainer.xcdatamodeld */; };
 		54DD868E2719AF80007C09DA /* FilmJournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD868D2719AF80007C09DA /* FilmJournalApp.swift */; };
 		54DD86902719AF80007C09DA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DD868F2719AF80007C09DA /* HomeView.swift */; };
@@ -23,6 +25,8 @@
 		543992F5271A181D0013E179 /* FilmRollDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDetailView.swift; sourceTree = "<group>"; };
 		543992F7271A19E00013E179 /* AddRollSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRollSheet.swift; sourceTree = "<group>"; };
 		543992F9271A202A0013E179 /* FilmRollsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollsViewModel.swift; sourceTree = "<group>"; };
+		544D3D9A27247B0B0015C726 /* FilmRollEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmRollEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		544D3D9B27247B0B0015C726 /* FilmRollEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FilmRollEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		548E8D8B271FA981007B2293 /* FilmRollsContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FilmRollsContainer.xcdatamodel; sourceTree = "<group>"; };
 		54DD868A2719AF80007C09DA /* FilmJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54DD868D2719AF80007C09DA /* FilmJournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmJournalApp.swift; sourceTree = "<group>"; };
@@ -47,6 +51,8 @@
 		54DD86812719AF80007C09DA = {
 			isa = PBXGroup;
 			children = (
+				544D3D9A27247B0B0015C726 /* FilmRollEntity+CoreDataClass.swift */,
+				544D3D9B27247B0B0015C726 /* FilmRollEntity+CoreDataProperties.swift */,
 				54DD868C2719AF80007C09DA /* FilmJournal */,
 				54DD868B2719AF80007C09DA /* Products */,
 			);
@@ -161,8 +167,10 @@
 				543992F6271A181D0013E179 /* FilmRollDetailView.swift in Sources */,
 				543992F8271A19E00013E179 /* AddRollSheet.swift in Sources */,
 				543992FA271A202A0013E179 /* FilmRollsViewModel.swift in Sources */,
+				544D3D9C27247B0B0015C726 /* FilmRollEntity+CoreDataClass.swift in Sources */,
 				548E8D8C271FA981007B2293 /* FilmRollsContainer.xcdatamodeld in Sources */,
 				54DD869E2719F243007C09DA /* FilmRollCardView.swift in Sources */,
+				544D3D9D27247B0B0015C726 /* FilmRollEntity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
