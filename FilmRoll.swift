@@ -5,10 +5,10 @@
 //  Created by Ronald Jabouin on 10/23/21.
 //
 
-import Foundation
+import SwiftUI
 import FirebaseFirestoreSwift
 
-struct FilmRoll: Identifiable, Codable {
+struct FilmRoll: Identifiable, Codable, Equatable {
     @DocumentID var id: String?
     var stock: String
     var iso: Int
@@ -16,7 +16,9 @@ struct FilmRoll: Identifiable, Codable {
     var numberOfPictures: Int
     var extraNotes: String
     var location: String
+    var shotInformation: [String]
     var lensInfo: String
+   
     var startDateEvent: Date
        var startDateString: String {
            let formatter = DateFormatter()
@@ -45,9 +47,12 @@ struct FilmRoll: Identifiable, Codable {
         case numberOfPictures
         case extraNotes
         case location
+        case shotInformation
         case lensInfo
+       
         case startDateEvent
         case endDateEvent
+        
         
     }
 }

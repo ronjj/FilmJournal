@@ -6,7 +6,7 @@
 //  Copyright © 2020 Google LLC. All rights reserved.
 //
 
-import Foundation
+import SwiftUI
 import Combine
 import FirebaseFirestore
 
@@ -22,7 +22,7 @@ class FilmRollViewModel: ObservableObject {
   
   // MARK: - Constructors
   
-    init(filmRoll: FilmRoll = FilmRoll(stock: "", iso: 200, cameraUsed: "", numberOfPictures: 36, extraNotes: "", location: "",lensInfo: "",  startDateEvent: Date(), endDateEvent: Date())) {
+    init(filmRoll: FilmRoll = FilmRoll(stock: "", iso: 200, cameraUsed: "", numberOfPictures: 36, extraNotes: "", location: "", shotInformation: [], lensInfo: "",   startDateEvent: Date(), endDateEvent: Date())) {
     self.filmRoll = filmRoll
     
     self.$filmRoll

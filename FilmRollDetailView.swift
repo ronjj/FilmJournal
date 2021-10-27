@@ -29,13 +29,24 @@ struct FilmRollDetailsView: View {
                 Text("# of Exposures: \(filmRoll.numberOfPictures) ")
                 Text("Extra Notes: \(filmRoll.extraNotes) ")
             }
-
+            
             Section(header: Text("Extra Info")) {
                 Text("Locaiton(s): \(filmRoll.location) ")
                 Text("Lens Info: \(filmRoll.lensInfo) ")
                 Text("Dates Shot: \(filmRoll.startDateString) -> \(filmRoll.endDateString) ")
-
-
+            }
+            
+            Section(header: Text("Per Shot Information")) {
+                VStack(alignment: .leading, spacing: 10){
+                    ForEach(filmRoll.shotInformation, id: \.self) { shotInformation in
+                        Label(shotInformation, systemImage: "camera")
+                            .accessibilityLabel(Text("Camera"))
+                            .accessibilityValue(Text(shotInformation))
+                            .font(.body)
+                            .padding(.trailing, 10)
+                            .frame(height: 75)
+                    }
+                }
             }
         }
         .navigationBarTitle(filmRoll.stock)

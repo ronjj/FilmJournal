@@ -19,10 +19,13 @@
 		544D3DC12724874C0015C726 /* FilmRollEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DC02724874C0015C726 /* FilmRollEditView.swift */; };
 		544D3DC3272487A00015C726 /* FilmRollDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544D3DC2272487A00015C726 /* FilmRollDetailView.swift */; };
 		544D3DC5272488960015C726 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 544D3DC4272488960015C726 /* GoogleService-Info.plist */; };
+		54993E4B27274EA100C9606E /* InfoPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54993E4A27274EA100C9606E /* InfoPage.swift */; };
+		54993E4D2727516000C9606E /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54993E4C2727516000C9606E /* Color Extension.swift */; };
+		54F943712727432900F9A38D /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F943702727432900F9A38D /* ButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		544D3DA7272484E90015C726 /* FilmJournalFirebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmJournalFirebase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		544D3DA7272484E90015C726 /* Film Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Film Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		544D3DAA272484E90015C726 /* FilmJournalFirebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmJournalFirebaseApp.swift; sourceTree = "<group>"; };
 		544D3DAC272484E90015C726 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		544D3DAE272484EB0015C726 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,6 +37,9 @@
 		544D3DC02724874C0015C726 /* FilmRollEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollEditView.swift; sourceTree = "<group>"; };
 		544D3DC2272487A00015C726 /* FilmRollDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmRollDetailView.swift; sourceTree = "<group>"; };
 		544D3DC4272488960015C726 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		54993E4A27274EA100C9606E /* InfoPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPage.swift; sourceTree = "<group>"; };
+		54993E4C2727516000C9606E /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
+		54F943702727432900F9A38D /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		84112B466B619A0DF6A2982B /* Pods-FilmJournalFirebase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmJournalFirebase.release.xcconfig"; path = "Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase.release.xcconfig"; sourceTree = "<group>"; };
 		A79DC2CD9D6A405D99D1B3C4 /* Pods_FilmJournalFirebase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmJournalFirebase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90D6B878A407990DB485704 /* Pods-FilmJournalFirebase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmJournalFirebase.debug.xcconfig"; path = "Target Support Files/Pods-FilmJournalFirebase/Pods-FilmJournalFirebase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,7 +63,6 @@
 				E90D6B878A407990DB485704 /* Pods-FilmJournalFirebase.debug.xcconfig */,
 				84112B466B619A0DF6A2982B /* Pods-FilmJournalFirebase.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -69,7 +74,10 @@
 				544D3DBA2724854F0015C726 /* FilmRollsViewModel.swift */,
 				544D3DBC272485DE0015C726 /* FilmRollViewModel.swift */,
 				544D3DBE272486C10015C726 /* FilmRollsListView.swift */,
+				54993E4A27274EA100C9606E /* InfoPage.swift */,
 				544D3DC02724874C0015C726 /* FilmRollEditView.swift */,
+				54993E4C2727516000C9606E /* Color Extension.swift */,
+				54F943702727432900F9A38D /* ButtonStyle.swift */,
 				544D3DC2272487A00015C726 /* FilmRollDetailView.swift */,
 				544D3DA9272484E90015C726 /* FilmJournalFirebase */,
 				544D3DA8272484E90015C726 /* Products */,
@@ -81,7 +89,7 @@
 		544D3DA8272484E90015C726 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				544D3DA7272484E90015C726 /* FilmJournalFirebase.app */,
+				544D3DA7272484E90015C726 /* Film Journal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,7 +141,7 @@
 			);
 			name = FilmJournalFirebase;
 			productName = FilmJournalFirebase;
-			productReference = 544D3DA7272484E90015C726 /* FilmJournalFirebase.app */;
+			productReference = 544D3DA7272484E90015C726 /* Film Journal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -246,12 +254,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54993E4B27274EA100C9606E /* InfoPage.swift in Sources */,
 				544D3DAD272484E90015C726 /* ContentView.swift in Sources */,
 				544D3DBD272485DE0015C726 /* FilmRollViewModel.swift in Sources */,
 				544D3DC3272487A00015C726 /* FilmRollDetailView.swift in Sources */,
 				544D3DAB272484E90015C726 /* FilmJournalFirebaseApp.swift in Sources */,
 				544D3DBF272486C10015C726 /* FilmRollsListView.swift in Sources */,
 				544D3DC12724874C0015C726 /* FilmRollEditView.swift in Sources */,
+				54F943712727432900F9A38D /* ButtonStyle.swift in Sources */,
+				54993E4D2727516000C9606E /* Color Extension.swift in Sources */,
 				544D3DB9272485160015C726 /* FilmRoll.swift in Sources */,
 				544D3DBB2724854F0015C726 /* FilmRollsViewModel.swift in Sources */,
 			);
@@ -400,7 +411,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jab.ron.FilmJournalFirebase;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Film Journal";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -431,7 +442,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.jab.ron.FilmJournalFirebase;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Film Journal";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
