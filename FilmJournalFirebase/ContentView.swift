@@ -8,14 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
+  @EnvironmentObject var viewModel: AuthenticationViewModel
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+  var body: some View {
+    switch viewModel.state {
+    case .signedIn: FilmRollsListView()
+    case .signedOut: LoginView()
     }
+  }
 }

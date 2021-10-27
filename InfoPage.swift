@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 struct GuidingQuestion {
     let id = UUID()
@@ -15,18 +16,21 @@ struct GuidingQuestion {
 
 struct InfoPage: View {
     @Environment(\.presentationMode) private var presentationMode
+    @EnvironmentObject var viewModel: AuthenticationViewModel
+    private let user = GIDSignIn.sharedInstance().currentUser
     let guidingQuestions = [
         GuidingQuestion(question: "What was your intended focus of the shot?"),
         GuidingQuestion(question: "What was the purpose of the shot?"),
         GuidingQuestion(question: "Where were you when you took the shot?"),
         GuidingQuestion(question: "What was the time?"),
         GuidingQuestion(question: "What was the weather like?"),
+        GuidingQuestion(question: "Was anyone in the picture?"),
         
     ]
     
     var cancelButton: some View {
         Button(action: { self.handleCancelTapped() }) {
-            Text("Cancel")
+            Text("Dismiss")
         }
     }
     
@@ -41,7 +45,15 @@ struct InfoPage: View {
                     .frame(height: 50)
                     
                 }
+                Button("Sign out") {
+                    dismiss()
+                    viewModel.signOut()
+                    
+                }
+                .buttonStyle(AuthenticationButtonStyle())
             }
+            
+            
             .navigationBarItems(
                 leading: cancelButton
             )

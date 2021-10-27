@@ -7,17 +7,27 @@
 
 import SwiftUI
 import Firebase
+import GoogleSignIn
 
 @main
+
 struct FilmJournalFirebaseApp: App {
+    @StateObject var viewModel = AuthenticationViewModel()
     
     init(){
-        FirebaseApp.configure()
+        setupAuthentication()
     }
     
     var body: some Scene {
         WindowGroup {
-            FilmRollsListView()
+            ContentView()
+                .environmentObject(viewModel)
         }
     }
+}
+extension FilmJournalFirebaseApp {
+  private func setupAuthentication() {
+    FirebaseApp.configure()
+      GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+  }
 }
